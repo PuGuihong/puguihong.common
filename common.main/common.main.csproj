@@ -53,6 +53,13 @@
     <Compile Include="common_14\AttributeHelper.cs" />
     <Compile Include="common_14\ReflectionHelper.cs" />
     <Compile Include="common_14\ReflectionMethod.cs" />
+    <Compile Include="common_15\MyArrayList.cs" />
+    <Compile Include="common_15\MyBitArray.cs" />
+    <Compile Include="common_15\MyHashTable.cs" />
+    <Compile Include="common_15\MyQueue.cs" />
+    <Compile Include="common_15\MySortedList.cs" />
+    <Compile Include="common_15\MyStack.cs" />
+    <Compile Include="common_16\MyThread.cs" />
     <Compile Include="common_2\Rectangle.cs" />
     <Compile Include="common_2\TableTop.cs" />
     <Compile Include="common_3\IPaintCost.cs" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Reflection;
 using common.main.common_1;
 using common.main.common_2;
 using common.main.common_3;
@@ -16,7 +17,7 @@ using common.main.common_11;
 using common.main.common_12;
 using common.main.common_13;
 using common.main.common_14;
-using System.Reflection;
+using common.main.common_15;
 
 
 namespace common.main
@@ -39,8 +40,10 @@ namespace common.main
             //Common12_test();
             //Common13_test();
             //Common14_test();
+            Common15_test();
             Console.ReadKey();
         }
+        #region 1-10 基础方法和属性
         /// <summary>
         /// 子类继承
         /// </summary>
@@ -102,7 +105,6 @@ namespace common.main
             common_6.Triangle trian = new common_6.Triangle(12, 18);
             caller.CallArea(rec);
             caller.CallArea(trian);
-
         }
         /// <summary>
         /// 运算符重载 operator + - == ++ * / 
@@ -185,6 +187,8 @@ namespace common.main
             expre = myregex.ReplaceMatch(str, pattern, replacement);
             Console.WriteLine("替换结果是: {0}\n", expre);
         }
+        #endregion
+        #region 11-16 高级方法和属性
         /// <summary>
         /// 异常捕获
         /// 自定义异常
@@ -267,5 +271,41 @@ namespace common.main
             //有误
             //rem.GetMethodAttribute();
         }
+        /// <summary>
+        /// Collection C#集合
+        /// 
+        /// Arraylist   动态数组
+        /// HashTable   哈希表
+        /// SortedList  排序列表
+        /// Stack   堆栈
+        /// </summary>
+        static void Common15_test()
+        {
+            ///动态数组
+            common_15.MyArrayList myarrylst = new common_15.MyArrayList();
+            myarrylst.Add();
+            myarrylst.SortArray();
+            ///哈希表
+            common_15.MyHashTable myhashtable = new common_15.MyHashTable();
+            myhashtable.ContainsValues("ss");
+            myhashtable.ShowHashTable();
+            ///排序列表
+            common_15.MySortedList mysortlst = new common_15.MySortedList();
+            mysortlst.ShowSortedLst();
+            ///堆栈
+            common_15.MyStack mystack = new common_15.MyStack();
+            mystack.ShowStac();
+            ///队列
+            common_15.MyQueue myqueue = new common_15.MyQueue();
+            myqueue.ShowQueue();
+            //点阵列
+            common_15.MyBitArray mybitarray = new common_15.MyBitArray();
+            mybitarray.ShowBitArray();
+        }
+        static void Common16_test()
+        {
+
+        }
+        #endregion
     }
 }
