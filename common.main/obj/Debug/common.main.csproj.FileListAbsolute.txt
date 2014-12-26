@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\common\common.main\bin\Debug\common.main.exe.config
+E:\NetWorkSpace\Common\common\common.main\bin\Debug\common.main.exe.config
+E:\NetWorkSpace\Common\common\common.main\bin\Debug\common.main.exe
+E:\NetWorkSpace\Common\common\common.main\bin\Debug\common.main.pdb
+E:\NetWorkSpace\Common\common\common.main\obj\Debug\common.main.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Common\common\common.main\obj\Debug\common.main.exe
+E:\NetWorkSpace\Common\common\common.main\obj\Debug\common.main.pdb
+C:\Users\Pu\Desktop\Common\common\common.main\bin\Debug\common.main.exe.config
+C:\Users\Pu\Desktop\Common\common\common.main\obj\Debug\common.main.exe
+C:\Users\Pu\Desktop\Common\common\common.main\obj\Debug\common.main.pdb
+C:\Users\Pu\Desktop\Common\common\common.main\bin\Debug\common.main.exe
+C:\Users\Pu\Desktop\Common\common\common.main\bin\Debug\common.main.pdb
+C:\Users\Pu\Desktop\Common\common\common.main\obj\Debug\common.main.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Common\puguihong.common\common.main\bin\Debug\common.main.exe.config
+D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.exe
+D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.pdb
