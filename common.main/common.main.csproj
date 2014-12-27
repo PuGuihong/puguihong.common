@@ -80,6 +80,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="common_1\Rectangle.cs" />
     <Compile Include="common_1\Shap.cs" />
+    <Compile Include="update_1\InitC.cs" />
+    <Compile Include="update_1\IShap.cs" />
+    <Compile Include="update_1\BasicMessage.cs" />
+    <Compile Include="update_1\ParamModel.cs" />
+    <Compile Include="update_1\Rectangle.cs" />
+    <Compile Include="update_1\Square.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -18,7 +18,8 @@ using common.main.common_12;
 using common.main.common_13;
 using common.main.common_14;
 using common.main.common_15;
-
+using common.main.update_1;
+using System.Collections;
 
 namespace common.main
 {
@@ -26,6 +27,7 @@ namespace common.main
     {
         static void Main(string[] args)
         {
+            #region common 基础测试入口
             //Common1_test();
             //Common2_test();
             //Common3_test();
@@ -40,10 +42,14 @@ namespace common.main
             //Common12_test();
             //Common13_test();
             //Common14_test();
-            Common15_test();
+            //Common15_test();
+            #endregion
+            #region update 测试入口
+            Update1();
+            #endregion
             Console.ReadKey();
         }
-        #region 1-10 基础方法和属性
+        #region common 1-10 基础方法和属性
         /// <summary>
         /// 子类继承
         /// </summary>
@@ -188,7 +194,7 @@ namespace common.main
             Console.WriteLine("替换结果是: {0}\n", expre);
         }
         #endregion
-        #region 11-16 高级方法和属性
+        #region common 11-16 高级方法和属性
         /// <summary>
         /// 异常捕获
         /// 自定义异常
@@ -304,6 +310,32 @@ namespace common.main
         }
         static void Common16_test()
         {
+
+        }
+        #endregion
+        #region update 高级方法和属性
+        static void Update1()
+        {
+            string[] strshap = new string[] { "Rectangle", "Square" };
+            List<update_1.MessageModel> msglst = new List<MessageModel>();
+            update_1.InitC initrcshap;
+            for (int i = 0; i < strshap.Count(); i++)
+            {
+                initrcshap = new InitC(strshap[i]);
+                msglst.Add(initrcshap.GetStart());
+            }
+
+            for (int i = 0; i < msglst.Count(); i++)
+            {
+                Console.WriteLine(msglst[i].ShapName);
+                foreach (BasicMessage message in msglst[i].BMsgLst)
+                {
+                    Console.WriteLine(message.HandleName);
+                    Console.WriteLine(message.Result);
+                    Console.WriteLine(message.Description);
+                    Console.WriteLine(message.Formula);
+                }
+            }
 
         }
         #endregion

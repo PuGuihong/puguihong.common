@@ -14,3 +14,6 @@ C:\Users\Pu\Desktop\Common\common\common.main\obj\Debug\common.main.csprojResolv
 D:\WorkSpace\Common\puguihong.common\common.main\bin\Debug\common.main.exe.config
 D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.exe
 D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.pdb
+D:\WorkSpace\Common\puguihong.common\common.main\bin\Debug\common.main.exe
+D:\WorkSpace\Common\puguihong.common\common.main\bin\Debug\common.main.pdb
+D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.csprojResolveAssemblyReference.cache
