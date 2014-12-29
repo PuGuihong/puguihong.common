@@ -8,19 +8,19 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace common.service.client.mainapp.ServiceFileUp {
+namespace common.service.downloadclient.ServiceFileDown {
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceFileUp.IStreamed")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceFileDown.IStreamed")]
     public interface IStreamed {
         
         // CODEGEN: 消息 FileWrapper 的包装名称(FileWrapper)以后生成的消息协定与默认值(UploadFile)不匹配
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStreamed/UploadFile", ReplyAction="http://tempuri.org/IStreamed/UploadFileResponse")]
-        common.service.client.mainapp.ServiceFileUp.Result UploadFile(common.service.client.mainapp.ServiceFileUp.FileWrapper request);
+        common.service.downloadclient.ServiceFileDown.Result UploadFile(common.service.downloadclient.ServiceFileDown.FileWrapper request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStreamed/UploadFile", ReplyAction="http://tempuri.org/IStreamed/UploadFileResponse")]
-        System.Threading.Tasks.Task<common.service.client.mainapp.ServiceFileUp.Result> UploadFileAsync(common.service.client.mainapp.ServiceFileUp.FileWrapper request);
+        System.Threading.Tasks.Task<common.service.downloadclient.ServiceFileDown.Result> UploadFileAsync(common.service.downloadclient.ServiceFileDown.FileWrapper request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStreamed/DownloadFile", ReplyAction="http://tempuri.org/IStreamed/DownloadFileResponse")]
         System.IO.Stream DownloadFile();
@@ -68,12 +68,12 @@ namespace common.service.client.mainapp.ServiceFileUp {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IStreamedChannel : common.service.client.mainapp.ServiceFileUp.IStreamed, System.ServiceModel.IClientChannel {
+    public interface IStreamedChannel : common.service.downloadclient.ServiceFileDown.IStreamed, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class StreamedClient : System.ServiceModel.ClientBase<common.service.client.mainapp.ServiceFileUp.IStreamed>, common.service.client.mainapp.ServiceFileUp.IStreamed {
+    public partial class StreamedClient : System.ServiceModel.ClientBase<common.service.downloadclient.ServiceFileDown.IStreamed>, common.service.downloadclient.ServiceFileDown.IStreamed {
         
         public StreamedClient() {
         }
@@ -95,28 +95,28 @@ namespace common.service.client.mainapp.ServiceFileUp {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        common.service.client.mainapp.ServiceFileUp.Result common.service.client.mainapp.ServiceFileUp.IStreamed.UploadFile(common.service.client.mainapp.ServiceFileUp.FileWrapper request) {
+        common.service.downloadclient.ServiceFileDown.Result common.service.downloadclient.ServiceFileDown.IStreamed.UploadFile(common.service.downloadclient.ServiceFileDown.FileWrapper request) {
             return base.Channel.UploadFile(request);
         }
         
         public bool UploadFile(string FilePath, System.IO.Stream FileData) {
-            common.service.client.mainapp.ServiceFileUp.FileWrapper inValue = new common.service.client.mainapp.ServiceFileUp.FileWrapper();
+            common.service.downloadclient.ServiceFileDown.FileWrapper inValue = new common.service.downloadclient.ServiceFileDown.FileWrapper();
             inValue.FilePath = FilePath;
             inValue.FileData = FileData;
-            common.service.client.mainapp.ServiceFileUp.Result retVal = ((common.service.client.mainapp.ServiceFileUp.IStreamed)(this)).UploadFile(inValue);
+            common.service.downloadclient.ServiceFileDown.Result retVal = ((common.service.downloadclient.ServiceFileDown.IStreamed)(this)).UploadFile(inValue);
             return retVal.ReturnResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<common.service.client.mainapp.ServiceFileUp.Result> common.service.client.mainapp.ServiceFileUp.IStreamed.UploadFileAsync(common.service.client.mainapp.ServiceFileUp.FileWrapper request) {
+        System.Threading.Tasks.Task<common.service.downloadclient.ServiceFileDown.Result> common.service.downloadclient.ServiceFileDown.IStreamed.UploadFileAsync(common.service.downloadclient.ServiceFileDown.FileWrapper request) {
             return base.Channel.UploadFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<common.service.client.mainapp.ServiceFileUp.Result> UploadFileAsync(string FilePath, System.IO.Stream FileData) {
-            common.service.client.mainapp.ServiceFileUp.FileWrapper inValue = new common.service.client.mainapp.ServiceFileUp.FileWrapper();
+        public System.Threading.Tasks.Task<common.service.downloadclient.ServiceFileDown.Result> UploadFileAsync(string FilePath, System.IO.Stream FileData) {
+            common.service.downloadclient.ServiceFileDown.FileWrapper inValue = new common.service.downloadclient.ServiceFileDown.FileWrapper();
             inValue.FilePath = FilePath;
             inValue.FileData = FileData;
-            return ((common.service.client.mainapp.ServiceFileUp.IStreamed)(this)).UploadFileAsync(inValue);
+            return ((common.service.downloadclient.ServiceFileDown.IStreamed)(this)).UploadFileAsync(inValue);
         }
         
         public System.IO.Stream DownloadFile() {
