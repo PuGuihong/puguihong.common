@@ -17,18 +17,16 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DownloadFileWrapper">
+  <xs:element name="DownloadFile">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="DownloadResult">
+  <xs:element name="DownloadFileResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.microsoft.com/Message" name="FileData" type="q2:StreamBody" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/Message" name="DownloadFileResult" type="q2:StreamBody" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="FileSize" type="xs:long" />
-  <xs:element name="ReturnResult" type="xs:boolean" />
 </xs:schema>

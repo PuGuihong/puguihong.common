@@ -1,0 +1,6 @@
+D:\WorkSpace\Common\puguihong.common\common.service.downloadclient\bin\Debug\common.service.downloadclient.exe.config
+D:\WorkSpace\Common\puguihong.common\common.service.downloadclient\bin\Debug\common.service.downloadclient.exe
+D:\WorkSpace\Common\puguihong.common\common.service.downloadclient\bin\Debug\common.service.downloadclient.pdb
+D:\WorkSpace\Common\puguihong.common\common.service.downloadclient\obj\Debug\common.service.downloadclient.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Common\puguihong.common\common.service.downloadclient\obj\Debug\common.service.downloadclient.exe
+D:\WorkSpace\Common\puguihong.common\common.service.downloadclient\obj\Debug\common.service.downloadclient.pdb

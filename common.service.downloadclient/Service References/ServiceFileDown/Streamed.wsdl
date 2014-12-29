@@ -46,19 +46,11 @@
   <wsdl:message name="UploadResult">
     <wsdl:part name="parameters" element="tns:UploadResult" />
   </wsdl:message>
-  <wsdl:message name="DownloadFileWrapper">
-    <wsdl:part name="parameters" element="tns:DownloadFileWrapper" />
+  <wsdl:message name="IStreamed_DownloadFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadFile" />
   </wsdl:message>
-  <wsdl:message name="DownloadFileWrapper_Headers">
-    <wsdl:part name="FilePath" element="tns:FilePath" />
-  </wsdl:message>
-  <wsdl:message name="DownloadResult">
-    <wsdl:part name="parameters" element="tns:DownloadResult" />
-  </wsdl:message>
-  <wsdl:message name="DownloadResult_Headers">
-    <wsdl:part name="FilePath" element="tns:FilePath" />
-    <wsdl:part name="FileSize" element="tns:FileSize" />
-    <wsdl:part name="ReturnResult" element="tns:ReturnResult" />
+  <wsdl:message name="IStreamed_DownloadFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
   </wsdl:message>
   <wsdl:portType name="IStreamed">
     <wsdl:operation name="UploadFile">
@@ -66,8 +58,8 @@
       <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/UploadFileResponse" name="UploadResult" message="tns:UploadResult" />
     </wsdl:operation>
     <wsdl:operation name="DownloadFile">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStreamed/DownloadFile" name="DownloadFileWrapper" message="tns:DownloadFileWrapper" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/DownloadFileResponse" name="DownloadResult" message="tns:DownloadResult" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IStreamed/DownloadFile" message="tns:IStreamed_DownloadFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/DownloadFileResponse" message="tns:IStreamed_DownloadFile_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IStreamed" type="tns:IStreamed">
@@ -85,14 +77,10 @@
     </wsdl:operation>
     <wsdl:operation name="DownloadFile">
       <soap12:operation soapAction="http://tempuri.org/IStreamed/DownloadFile" style="document" />
-      <wsdl:input name="DownloadFileWrapper">
-        <soap12:header message="tns:DownloadFileWrapper_Headers" part="FilePath" use="literal" />
+      <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="DownloadResult">
-        <soap12:header message="tns:DownloadResult_Headers" part="FilePath" use="literal" />
-        <soap12:header message="tns:DownloadResult_Headers" part="FileSize" use="literal" />
-        <soap12:header message="tns:DownloadResult_Headers" part="ReturnResult" use="literal" />
+      <wsdl:output>
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
@@ -103,7 +91,7 @@
       <wsa10:EndpointReference>
         <wsa10:Address>net.tcp://localhost:54321/Message/Streamed</wsa10:Address>
         <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
-          <Upn>WIN-43A8QDK33TB\Administrator</Upn>
+          <Upn>PUGUIHONG\Pu</Upn>
         </Identity>
       </wsa10:EndpointReference>
     </wsdl:port>

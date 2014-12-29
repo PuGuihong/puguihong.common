@@ -1,0 +1,5 @@
+D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.exe.config
+D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.exe
+D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.pdb
+D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.exe
+D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.pdb

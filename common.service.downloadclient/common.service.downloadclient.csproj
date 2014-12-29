@@ -53,9 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\ServiceFileDown\common.service.downloadclient.ServiceFileDown.DownloadResult.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
     <None Include="Service References\ServiceFileDown\common.service.downloadclient.ServiceFileDown.UploadResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
