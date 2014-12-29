@@ -12,16 +12,17 @@ namespace common.service.client.mainapp
             ServiceFileUp.IStreamed service = factory.CreateChannel();
 
             string filePath = @"D:\1.jpg";
-            string newFilePath = @"D:\2.jpg";
+            string newFilePath = @"D:\upload_" + System.DateTime.Now.ToString("yy_MM_dd_hh_mm_ss") + ".jpg";
 
             System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch(); //定义观察者
 
             watch.Start();
-            ServiceFileUp.Result returnResult = service.UploadFile(GetStreamFromFile(filePath, newFilePath));
+            ServiceFileUp.UploadResult Result = service.UploadFile(GetStreamFromFile(filePath, newFilePath));
             watch.Stop();
 
-            if (returnResult.ReturnResult)
+            if (Result.ReturnResult)
             {
+                Console.WriteLine("服务器接收的文件大小为：{0}\n", Result.FileSize);
                 Console.WriteLine("上传成功,上传时间为：" + watch.ElapsedMilliseconds);
                 Console.ReadLine();
             }
@@ -37,20 +38,20 @@ namespace common.service.client.mainapp
         /// <param name="file">源文件地址</param>
         /// <param name="new_file_path">服务器文件地址</param>
         /// <returns></returns>
-        public static ServiceFileUp.FileWrapper GetStreamFromFile(string file, string new_file_path)
+        public static ServiceFileUp.UploadFileWrapper GetStreamFromFile(string file, string new_file_path)
         {
-            ServiceFileUp.FileWrapper my_file = null;
+            ServiceFileUp.UploadFileWrapper my_file = null;
             try
             {
                 var sr = new System.IO.FileStream(file, 
                     System.IO.FileMode.Open);
-                ServiceFileUp.FileWrapper onfile = new ServiceFileUp.FileWrapper()
+                ServiceFileUp.UploadFileWrapper onfile = new ServiceFileUp.UploadFileWrapper()
                 {
                     FilePath = new_file_path,
                     FileData = sr
                 };
                 my_file = onfile;
-                Console.WriteLine("文件大小为：{0}\n", sr.Length.ToString());
+                Console.WriteLine("本地上传文件大小为：{0}\n", sr.Length.ToString());
             }
             catch (Exception ex)
             {

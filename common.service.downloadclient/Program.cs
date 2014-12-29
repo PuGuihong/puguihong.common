@@ -16,12 +16,14 @@ namespace common.service.downloadclient
             string strAddress = "net.tcp://localhost:54321/Message/Streamed";
             ChannelFactory<downloadclient.ServiceFileDown.IStreamed> factory = new ChannelFactory<downloadclient.ServiceFileDown.IStreamed>("NetTcpBinding_IStreamed", new EndpointAddress(strAddress));
             downloadclient.ServiceFileDown.IStreamed service = factory.CreateChannel();
-
-            string filepath = @"E:\2.jpg";
+            downloadclient.ServiceFileDown.DownloadFileWrapper filewrap = new DownloadFileWrapper() { FilePath = "" };
+            downloadclient.ServiceFileDown.DownloadResult result = null;
+            string filepath = @"E:\download_" + System.DateTime.Now.ToString("yy_MM_dd_hh_mm_ss") + ".jpg";
             System.Diagnostics.Stopwatch watch = new System.Diagnostics.Stopwatch(); //定义观察者
 
             watch.Start();
-            Stream sourcestream = service.DownloadFile();
+            result = service.DownloadFile(filewrap);
+            Stream sourcestream = result.FileData;
             watch.Stop();
             try
             {
@@ -33,9 +35,9 @@ namespace common.service.downloadclient
                     targetstream.Write(buffer, 0, count);
                 }
                 Console.WriteLine("下载成功,下载目录为：{0} , 文件大小： {1}", filepath, targetstream.Length.ToString());
-                Console.ReadLine();
                 sourcestream.Close();
                 targetstream.Close();
+                Console.ReadLine();
             }
             catch (Exception ex)
             {

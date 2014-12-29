@@ -53,7 +53,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\ServiceFileUp\common.service.client.mainapp.ServiceFileUp.Result.datasource">
+    <None Include="Service References\ServiceFileUp\common.service.client.mainapp.ServiceFileUp.DownloadResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceFileUp\common.service.client.mainapp.ServiceFileUp.UploadResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\ServiceFileUp\item.xsd">

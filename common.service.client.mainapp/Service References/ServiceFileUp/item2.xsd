@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:12345/Message/Streamed/?xsd=xsd0" namespace="http://schemas.microsoft.com/Message" />
-  <xs:element name="FileWrapper">
+  <xs:element name="UploadFileWrapper">
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q1="http://schemas.microsoft.com/Message" name="FileData" type="q1:StreamBody" />
@@ -9,23 +9,26 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="FilePath" nillable="true" type="xs:string" />
-  <xs:element name="Result">
+  <xs:element name="UploadResult">
     <xs:complexType>
       <xs:sequence>
+        <xs:element minOccurs="0" name="FileSize" type="xs:long" />
         <xs:element minOccurs="0" name="ReturnResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="DownloadFile">
+  <xs:element name="DownloadFileWrapper">
     <xs:complexType>
       <xs:sequence />
     </xs:complexType>
   </xs:element>
-  <xs:element name="DownloadFileResponse">
+  <xs:element name="DownloadResult">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.microsoft.com/Message" name="DownloadFileResult" type="q2:StreamBody" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/Message" name="FileData" type="q2:StreamBody" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="FileSize" type="xs:long" />
+  <xs:element name="ReturnResult" type="xs:boolean" />
 </xs:schema>

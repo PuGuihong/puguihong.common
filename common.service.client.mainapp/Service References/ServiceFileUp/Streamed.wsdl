@@ -37,29 +37,37 @@
       <xsd:import schemaLocation="http://localhost:12345/Message/Streamed/?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="FileWrapper">
-    <wsdl:part name="parameters" element="tns:FileWrapper" />
+  <wsdl:message name="UploadFileWrapper">
+    <wsdl:part name="parameters" element="tns:UploadFileWrapper" />
   </wsdl:message>
-  <wsdl:message name="FileWrapper_Headers">
+  <wsdl:message name="UploadFileWrapper_Headers">
     <wsdl:part name="FilePath" element="tns:FilePath" />
   </wsdl:message>
-  <wsdl:message name="Result">
-    <wsdl:part name="parameters" element="tns:Result" />
+  <wsdl:message name="UploadResult">
+    <wsdl:part name="parameters" element="tns:UploadResult" />
   </wsdl:message>
-  <wsdl:message name="IStreamed_DownloadFile_InputMessage">
-    <wsdl:part name="parameters" element="tns:DownloadFile" />
+  <wsdl:message name="DownloadFileWrapper">
+    <wsdl:part name="parameters" element="tns:DownloadFileWrapper" />
   </wsdl:message>
-  <wsdl:message name="IStreamed_DownloadFile_OutputMessage">
-    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
+  <wsdl:message name="DownloadFileWrapper_Headers">
+    <wsdl:part name="FilePath" element="tns:FilePath" />
+  </wsdl:message>
+  <wsdl:message name="DownloadResult">
+    <wsdl:part name="parameters" element="tns:DownloadResult" />
+  </wsdl:message>
+  <wsdl:message name="DownloadResult_Headers">
+    <wsdl:part name="FilePath" element="tns:FilePath" />
+    <wsdl:part name="FileSize" element="tns:FileSize" />
+    <wsdl:part name="ReturnResult" element="tns:ReturnResult" />
   </wsdl:message>
   <wsdl:portType name="IStreamed">
     <wsdl:operation name="UploadFile">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStreamed/UploadFile" name="FileWrapper" message="tns:FileWrapper" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/UploadFileResponse" name="Result" message="tns:Result" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IStreamed/UploadFile" name="UploadFileWrapper" message="tns:UploadFileWrapper" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/UploadFileResponse" name="UploadResult" message="tns:UploadResult" />
     </wsdl:operation>
     <wsdl:operation name="DownloadFile">
-      <wsdl:input wsaw:Action="http://tempuri.org/IStreamed/DownloadFile" message="tns:IStreamed_DownloadFile_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/DownloadFileResponse" message="tns:IStreamed_DownloadFile_OutputMessage" />
+      <wsdl:input wsaw:Action="http://tempuri.org/IStreamed/DownloadFile" name="DownloadFileWrapper" message="tns:DownloadFileWrapper" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStreamed/DownloadFileResponse" name="DownloadResult" message="tns:DownloadResult" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="NetTcpBinding_IStreamed" type="tns:IStreamed">
@@ -67,20 +75,24 @@
     <soap12:binding transport="http://schemas.microsoft.com/soap/tcp" />
     <wsdl:operation name="UploadFile">
       <soap12:operation soapAction="http://tempuri.org/IStreamed/UploadFile" style="document" />
-      <wsdl:input name="FileWrapper">
-        <soap12:header message="tns:FileWrapper_Headers" part="FilePath" use="literal" />
+      <wsdl:input name="UploadFileWrapper">
+        <soap12:header message="tns:UploadFileWrapper_Headers" part="FilePath" use="literal" />
         <soap12:body use="literal" />
       </wsdl:input>
-      <wsdl:output name="Result">
+      <wsdl:output name="UploadResult">
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
     <wsdl:operation name="DownloadFile">
       <soap12:operation soapAction="http://tempuri.org/IStreamed/DownloadFile" style="document" />
-      <wsdl:input>
+      <wsdl:input name="DownloadFileWrapper">
+        <soap12:header message="tns:DownloadFileWrapper_Headers" part="FilePath" use="literal" />
         <soap12:body use="literal" />
       </wsdl:input>
-      <wsdl:output>
+      <wsdl:output name="DownloadResult">
+        <soap12:header message="tns:DownloadResult_Headers" part="FilePath" use="literal" />
+        <soap12:header message="tns:DownloadResult_Headers" part="FileSize" use="literal" />
+        <soap12:header message="tns:DownloadResult_Headers" part="ReturnResult" use="literal" />
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
