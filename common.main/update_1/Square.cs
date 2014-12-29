@@ -21,7 +21,7 @@ namespace common.main.update_1
         {
             //message = new MessageModel();
             formula = formula.Append("计算公式：（" + side);
-            formula.Append(" * 4 ");
+            formula.Append(" * 4 )");
             description = description.Append("需要 4 根长" + side + "的料;");
 
             bas_message.HandleName = "GetPerim";
@@ -35,10 +35,10 @@ namespace common.main.update_1
         {
             //message = new MessageModel();
             formula = formula.Append("计算公式：（" + side);
-            formula.Append(" * 4 ");
+            formula.Append(" * " + side + " ）");
 
             bas_message.HandleName = "GetArea";
-            bas_message.Result = side * 4;
+            bas_message.Result = side * side;
             description = description.Append("需要 面积为 " + bas_message.Result + " 的料;");
             bas_message.Formula = formula.ToString();
             bas_message.Description = description.ToString();

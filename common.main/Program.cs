@@ -333,7 +333,7 @@ namespace common.main
                     Console.WriteLine(message.HandleName);
                     Console.WriteLine(message.Result);
                     Console.WriteLine(message.Description);
-                    Console.WriteLine(message.Formula);
+                    Console.WriteLine(message.Formula +"\n");
                 }
             }
 
