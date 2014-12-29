@@ -18,6 +18,9 @@ using common.main.common_12;
 using common.main.common_13;
 using common.main.common_14;
 using common.main.common_15;
+using common.main.common_16;
+using common.main.common_17;
+
 using common.main.update_1;
 using System.Collections;
 
@@ -43,9 +46,10 @@ namespace common.main
             //Common13_test();
             //Common14_test();
             //Common15_test();
+            Common17_test();
             #endregion
             #region update 测试入口
-            Update1();
+            //Update1();
             #endregion
             Console.ReadKey();
         }
@@ -313,30 +317,36 @@ namespace common.main
 
         }
         #endregion
+        /// <summary>
+        /// 枚举类型
+        /// </summary>
+        static void Common17_test()
+        {
+            common_17.MyEnum myenum = new common_17.MyEnum();
+        }
         #region update 高级方法和属性
         static void Update1()
         {
-            string[] strshap = new string[] { "Rectangle", "Square" };
-            List<update_1.MessageModel> msglst = new List<MessageModel>();
-            update_1.InitC initrcshap;
-            for (int i = 0; i < strshap.Count(); i++)
-            {
-                initrcshap = new InitC(strshap[i]);
-                msglst.Add(initrcshap.GetStart());
-            }
+            //string[] strshap = new string[] { "Rectangle", "Square" };
+            //List<update_1.MessageModel> msglst = new List<MessageModel>();
+            //update_1.InitC initrcshap;
+            //for (int i = 0; i < strshap.Count(); i++)
+            //{
+            //    initrcshap = new InitC(strshap[i]);
+            //    msglst.Add(initrcshap.GetStart());
+            //}
 
-            for (int i = 0; i < msglst.Count(); i++)
-            {
-                Console.WriteLine(msglst[i].ShapName);
-                foreach (BasicMessage message in msglst[i].BMsgLst)
-                {
-                    Console.WriteLine(message.HandleName);
-                    Console.WriteLine(message.Result);
-                    Console.WriteLine(message.Description);
-                    Console.WriteLine(message.Formula);
-                }
-            }
-
+            //for (int i = 0; i < msglst.Count(); i++)
+            //{
+            //    Console.WriteLine(msglst[i].ShapName);
+            //    foreach (BasicMessage message in msglst[i].BMsgLst)
+            //    {
+            //        Console.WriteLine(message.HandleName);
+            //        Console.WriteLine(message.Result);
+            //        Console.WriteLine(message.Description);
+            //        Console.WriteLine(message.Formula);
+            //    }
+            //}
         }
         #endregion
     }

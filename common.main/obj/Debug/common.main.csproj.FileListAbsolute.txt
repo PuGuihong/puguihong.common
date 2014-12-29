@@ -17,3 +17,9 @@ D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.pdb
 D:\WorkSpace\Common\puguihong.common\common.main\bin\Debug\common.main.exe
 D:\WorkSpace\Common\puguihong.common\common.main\bin\Debug\common.main.pdb
 D:\WorkSpace\Common\puguihong.common\common.main\obj\Debug\common.main.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\common.main\bin\Debug\common.main.exe.config
+E:\NetWorkSpace\Git\puguihong.common\common.main\obj\Debug\common.main.exe
+E:\NetWorkSpace\Git\puguihong.common\common.main\obj\Debug\common.main.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.main\obj\Debug\common.main.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\common.main\bin\Debug\common.main.exe
+E:\NetWorkSpace\Git\puguihong.common\common.main\bin\Debug\common.main.pdb
