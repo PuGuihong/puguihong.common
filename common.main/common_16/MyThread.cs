@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace common.main.common_16
 {
@@ -24,7 +25,7 @@ namespace common.main.common_16
     /// 3.不可运行状态：已经调用 Sleep 方法,已经调用 Wait 方法,通过 I/O 操作阻塞
     /// 4.死亡状态：当线程已完成执行或已中止时的状况。
     /// <para>常用方法和属性</para>
-    /// CurrentContext	获取线程正在其中执行的当前上下文。
+    ///CurrentContext	获取线程正在其中执行的当前上下文。
     ///CurrentCulture	获取或设置当前线程的区域性。
     ///CurrentPrinciple	获取或设置线程的当前负责人（对基于角色的安全性而言）。
     ///CurrentThread	获取当前正在运行的线程。
@@ -92,5 +93,43 @@ namespace common.main.common_16
     /// </summary>
     class MyThread
     {
+        public void ThreadTest()
+        {
+            Thread th = Thread.CurrentThread;
+            th.Name = "MainThread";
+            Console.WriteLine("This is {0}", th.Name);
+        }
+
+        public void Func1()
+        {
+            Console.WriteLine("开启子进程");
+            int sleepfor = 5000;
+
+            Console.WriteLine("进程休眠 {0} 秒",sleepfor / 1000);
+            Thread.Sleep(sleepfor);
+            Console.WriteLine("进程被唤醒");
+        }
+        public void Func2()
+        {
+            int sleepfor = 2000;
+            Console.WriteLine("这是第二个方法 Func2");
+            Thread.Sleep(sleepfor);
+        }
+
+        public void ThreadCreated()
+        {
+            ThreadStart childref = new ThreadStart(Func1);
+            Thread childthd = new Thread(childref);
+            childthd.Start();
+        }
+        public void ThreadSleep()
+        {            
+            ThreadStart childref = new ThreadStart(Func2);
+            Thread childthd = new Thread(childref);
+            childthd.Start();
+            int sleepfor = 2000;
+            Thread.Sleep(sleepfor);
+        }
+
     }
 }

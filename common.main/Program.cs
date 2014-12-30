@@ -46,10 +46,11 @@ namespace common.main
             //Common13_test();
             //Common14_test();
             //Common15_test();
+            Common16_test();
             //Common17_test();
             #endregion
             #region update 测试入口
-            Update1();
+            //Update1();
             #endregion
             Console.ReadKey();
         }
@@ -314,7 +315,16 @@ namespace common.main
         }
         static void Common16_test()
         {
-
+            common_16.MyThread mythread = new common_16.MyThread();
+            //获取当前主进程名称
+            //mythread.ThreadTest();
+            //创建子进程，并且在子进程中执行方法。
+            //mythread.ThreadCreated();
+            for (int i = 0; i < 100; i++)
+            {
+                mythread.ThreadSleep();
+                Console.WriteLine("执行第 {0} 次 \n",i);
+            }
         }
         #endregion
         /// <summary>

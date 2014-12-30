@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ServiceModel;
 using System.IO;
+using System.Threading;
 
 namespace common.service.downloadclient
 {
@@ -10,14 +11,11 @@ namespace common.service.downloadclient
         {
             for (int i = 0; i < 100; i++)
             {
-                if (Test())
-                {
-                    Console.WriteLine("成功下载 第 {0} 次\n", i);
-                }
-                else
-                {
-                    Console.WriteLine("---------------下载失败 第 {0} 次\n", i);
-                }
+
+                Thread.Sleep(1000);
+                Console.WriteLine("第 {0} 次下载 \n", i + 1);
+                Test();
+
             }
             Console.ReadLine();
             

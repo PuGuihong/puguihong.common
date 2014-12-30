@@ -3,3 +3,9 @@ D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\bin\Debug\co
 D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.pdb
 D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.exe
 D:\WorkSpace\Common\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.exe.config
+E:\NetWorkSpace\Git\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.exe
+E:\NetWorkSpace\Git\puguihong.common\common.FileStreamUpDownService\bin\Debug\common.FileStreamUpDownService.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.exe
+E:\NetWorkSpace\Git\puguihong.common\common.FileStreamUpDownService\obj\Debug\common.FileStreamUpDownService.pdb

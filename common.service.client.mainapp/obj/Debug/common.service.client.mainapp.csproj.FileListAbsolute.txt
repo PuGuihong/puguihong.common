@@ -4,3 +4,9 @@ D:\WorkSpace\Common\puguihong.common\common.service.client.mainapp\bin\Debug\com
 D:\WorkSpace\Common\puguihong.common\common.service.client.mainapp\obj\Debug\common.service.client.mainapp.csprojResolveAssemblyReference.cache
 D:\WorkSpace\Common\puguihong.common\common.service.client.mainapp\obj\Debug\common.service.client.mainapp.exe
 D:\WorkSpace\Common\puguihong.common\common.service.client.mainapp\obj\Debug\common.service.client.mainapp.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.service.client.mainapp\bin\Debug\common.service.client.mainapp.exe.config
+E:\NetWorkSpace\Git\puguihong.common\common.service.client.mainapp\bin\Debug\common.service.client.mainapp.exe
+E:\NetWorkSpace\Git\puguihong.common\common.service.client.mainapp\bin\Debug\common.service.client.mainapp.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.service.client.mainapp\obj\Debug\common.service.client.mainapp.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\common.service.client.mainapp\obj\Debug\common.service.client.mainapp.exe
+E:\NetWorkSpace\Git\puguihong.common\common.service.client.mainapp\obj\Debug\common.service.client.mainapp.pdb
