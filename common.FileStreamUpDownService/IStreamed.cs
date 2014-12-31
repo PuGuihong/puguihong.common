@@ -90,7 +90,6 @@ namespace common.FileStreamUpDownService
     //    /// </summary>
     //    [MessageBodyMember]
     //    public Stream FileData;
-
     //}
     #endregion
 }

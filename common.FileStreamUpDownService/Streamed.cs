@@ -73,8 +73,6 @@ namespace common.FileStreamUpDownService
             
         //}
 
-
-
         public Stream DownloadFile()
         {
             Stream st = null;
