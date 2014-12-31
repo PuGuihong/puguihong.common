@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace common.Method
+namespace common.ICommon
 {
-    public class Class1
+    public interface IHelloGenerator
     {
+        string GetHelloString(string name);
     }
 }

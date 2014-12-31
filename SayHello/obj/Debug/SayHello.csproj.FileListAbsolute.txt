@@ -1,0 +1,7 @@
+E:\NetWorkSpace\Git\puguihong.common\SayHello\bin\Debug\SayHello.dll
+E:\NetWorkSpace\Git\puguihong.common\SayHello\bin\Debug\SayHello.pdb
+E:\NetWorkSpace\Git\puguihong.common\SayHello\bin\Debug\common.ICommon.dll
+E:\NetWorkSpace\Git\puguihong.common\SayHello\bin\Debug\common.ICommon.pdb
+E:\NetWorkSpace\Git\puguihong.common\SayHello\obj\Debug\SayHello.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\SayHello\obj\Debug\SayHello.dll
+E:\NetWorkSpace\Git\puguihong.common\SayHello\obj\Debug\SayHello.pdb

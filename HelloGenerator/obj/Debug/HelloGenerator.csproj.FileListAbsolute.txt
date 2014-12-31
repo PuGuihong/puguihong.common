@@ -1,0 +1,7 @@
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\bin\Debug\HelloGenerator.dll
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\bin\Debug\HelloGenerator.pdb
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\bin\Debug\common.ICommon.dll
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\bin\Debug\common.ICommon.pdb
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\obj\Debug\HelloGenerator.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\obj\Debug\HelloGenerator.dll
+E:\NetWorkSpace\Git\puguihong.common\HelloGenerator\obj\Debug\HelloGenerator.pdb

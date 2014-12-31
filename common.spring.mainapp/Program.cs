@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Spring.Context;
+using common.ICommon;
 using Spring.Core;
 using Spring.Data;
 using Common.Logging;
-using Spring.Context;
-using common.ICommon;
 using System.Configuration;
 
 namespace common.spring.mainapp
@@ -18,14 +14,13 @@ namespace common.spring.mainapp
         {
             try
             {
-                //IApplicationContext ctx = ConfigurationSettings.GetConfig("spring/context") as IApplicationContext;
-                IApplicationContext ctx = System.Configuration.ConfigurationManager.GetSection("spring/context") as IApplicationContext;
-                ISayHello sayHello = (ISayHello)ctx.GetObject("mySayHello");
+                IApplicationContext ctx = ConfigurationSettings.GetConfig("spring/context") as IApplicationContext;
+                //IApplicationContext ctx = System.Configuration.ConfigurationManager.GetSection("spring/context") as IApplicationContext;
+                common.ICommon.ISayHello sayHello = (common.ICommon.ISayHello)ctx.GetObject("mySayHello");
                 sayHello.SayHelloTo("zhenyulu");
             }
             catch (Exception)
-            {
-                
+            {                
                 throw;
             }
         }

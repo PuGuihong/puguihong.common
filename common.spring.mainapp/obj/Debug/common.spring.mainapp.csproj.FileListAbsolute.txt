@@ -1,0 +1,11 @@
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.spring.mainapp.exe.config
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.spring.mainapp.exe
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.spring.mainapp.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.ICommon.dll
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\Common.Logging.dll
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\Spring.Core.dll
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\Spring.Data.dll
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.ICommon.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.csprojResolveAssemblyReference.cache
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.exe
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.pdb
