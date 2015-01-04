@@ -13,3 +13,6 @@ E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\HelloGenera
 E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\SayHello.dll
 E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\HelloGenerator.pdb
 E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\SayHello.pdb
+D:\WorkSpace\Common\puguihong.common\common.spring.mainapp\bin\Debug\common.spring.mainapp.exe.config
+D:\WorkSpace\Common\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.exe
+D:\WorkSpace\Common\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.pdb
