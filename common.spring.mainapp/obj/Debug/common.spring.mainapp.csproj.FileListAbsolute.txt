@@ -8,4 +8,8 @@ E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.ICom
 E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.csprojResolveAssemblyReference.cache
 E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.exe
 E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\obj\Debug\common.spring.mainapp.pdb
-E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\App.config
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\common.spring.mainapp.exe.config
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\HelloGenerator.dll
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\SayHello.dll
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\HelloGenerator.pdb
+E:\NetWorkSpace\Git\puguihong.common\common.spring.mainapp\bin\Debug\SayHello.pdb

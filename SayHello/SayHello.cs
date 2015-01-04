@@ -22,7 +22,7 @@ namespace SayHello
         {
             if (helloGen != null)
             {
-                helloGen.GetHelloString(name);
+                Console.WriteLine(helloGen.GetHelloString(name));
             }
             else
             {

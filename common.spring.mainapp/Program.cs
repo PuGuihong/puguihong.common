@@ -1,10 +1,7 @@
 ﻿using System;
-using Spring.Context;
 using common.ICommon;
-using Spring.Core;
-using Spring.Data;
-using Common.Logging;
-using System.Configuration;
+using Spring.Context;
+using Spring.Context.Support;
 
 namespace common.spring.mainapp
 {
@@ -14,19 +11,20 @@ namespace common.spring.mainapp
         {
             try
             {
-                //IApplicationContext ctx = ConfigurationSettings.GetConfig("spring/context") as IApplicationContext;
-                IApplicationContext ctx = System.Configuration.ConfigurationManager.GetSection("spring/context") as IApplicationContext;
-                common.ICommon.ISayHello sayHello = (common.ICommon.ISayHello)ctx.GetObject("mySayHello");
+                IApplicationContext ctx = ContextRegistry.GetContext();
+                ICommon.ISayHello sayHello = ctx.GetObject("mySayHello") as ICommon.ISayHello;
                 sayHello.SayHelloTo("zhenyulu");
 
-                Spring.Context.IApplicationContext context = Spring.Context.Support.ContextRegistry.GetContext();
-                common.ICommon.ISayHello sayH = context.GetObject() as ISayHello;
+                sayHello.HelloGenerator = ctx.GetObject("myCnHelloGenerator") as IHelloGenerator;
+                sayHello.SayHelloTo("zhenyulu");
 
+                Console.WriteLine("ttst ---------");
             }
-            catch (Exception)
-            {                
-                throw;
+            catch (Exception ex)
+            {
+                Console.WriteLine("发生错误：{0} \n", ex.ToString());
             }
+            Console.ReadKey();
         }
     }
 }

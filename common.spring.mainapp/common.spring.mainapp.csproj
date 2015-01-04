@@ -58,14 +58,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="App.config">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\common.ICommon\common.ICommon.csproj">
       <Project>{72cd7672-cf50-4122-b7bb-21a5d315390a}</Project>
       <Name>common.ICommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HelloGenerator\HelloGenerator.csproj">
+      <Project>{5423a464-fc68-4374-99c8-23c9dfcd01b6}</Project>
+      <Name>HelloGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SayHello\SayHello.csproj">
+      <Project>{9de2b1b4-d53e-400d-93ae-2b805b0b2f64}</Project>
+      <Name>SayHello</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
