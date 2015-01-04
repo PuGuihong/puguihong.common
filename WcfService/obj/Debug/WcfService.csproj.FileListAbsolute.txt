@@ -1,0 +1,7 @@
+D:\WorkSpace\Common\puguihong.common\WcfService\bin\Debug\WcfService.dll
+D:\WorkSpace\Common\puguihong.common\WcfService\bin\Debug\WcfService.pdb
+D:\WorkSpace\Common\puguihong.common\WcfService\bin\Debug\IContract.dll
+D:\WorkSpace\Common\puguihong.common\WcfService\bin\Debug\IContract.pdb
+D:\WorkSpace\Common\puguihong.common\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Common\puguihong.common\WcfService\obj\Debug\WcfService.dll
+D:\WorkSpace\Common\puguihong.common\WcfService\obj\Debug\WcfService.pdb

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <description>
+    Spring.NET Configuration For Service
+    Class Library : AppHost
+    Author        : owen pu
+    Create Date   : 2015-01-04
+  </description>
+
+  <object id="WcfServerHost" type="Spring.ServiceModel.Activation.ServiceHostFactoryObject, Spring.Services">
+    <property name="TargetName" value="WcfServer" />
+  </object>
+
+</objects>

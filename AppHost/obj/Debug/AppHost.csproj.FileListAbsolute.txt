@@ -1,0 +1,13 @@
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\AppHost.exe.config
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\AppHost.exe
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\AppHost.pdb
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\Common.Logging.dll
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\Spring.Core.dll
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\Spring.Data.dll
+D:\WorkSpace\Common\puguihong.common\AppHost\obj\Debug\AppHost.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Common\puguihong.common\AppHost\obj\Debug\AppHost.exe
+D:\WorkSpace\Common\puguihong.common\AppHost\obj\Debug\AppHost.pdb
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\IContract.dll
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\WcfService.dll
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\IContract.pdb
+D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\WcfService.pdb

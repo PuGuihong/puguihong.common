@@ -1,0 +1,13 @@
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\mainapp.exe.config
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\mainapp.exe
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\mainapp.pdb
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\Common.Logging.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\Quartz.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\Spring.Core.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\Spring.Data.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\Spring.Scheduling.Quartz.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\WorkSpace\Common\puguihong.common\mainapp\obj\Debug\mainapp.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Common\puguihong.common\mainapp\obj\Debug\mainapp.exe
+D:\WorkSpace\Common\puguihong.common\mainapp\obj\Debug\mainapp.pdb

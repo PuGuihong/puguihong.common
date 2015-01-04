@@ -1,0 +1,5 @@
+D:\WorkSpace\Common\puguihong.common\IContract\bin\Debug\IContract.dll
+D:\WorkSpace\Common\puguihong.common\IContract\bin\Debug\IContract.pdb
+D:\WorkSpace\Common\puguihong.common\IContract\obj\Debug\IContract.csprojResolveAssemblyReference.cache
+D:\WorkSpace\Common\puguihong.common\IContract\obj\Debug\IContract.dll
+D:\WorkSpace\Common\puguihong.common\IContract\obj\Debug\IContract.pdb
