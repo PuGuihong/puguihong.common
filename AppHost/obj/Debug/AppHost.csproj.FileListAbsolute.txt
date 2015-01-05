@@ -11,3 +11,6 @@ D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\IContract.dll
 D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\WcfService.dll
 D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\IContract.pdb
 D:\WorkSpace\Common\puguihong.common\AppHost\bin\Debug\WcfService.pdb
+E:\NetWorkSpace\Git\puguihong.common\AppHost\bin\Debug\AppHost.exe.config
+E:\NetWorkSpace\Git\puguihong.common\AppHost\obj\Debug\AppHost.exe
+E:\NetWorkSpace\Git\puguihong.common\AppHost\obj\Debug\AppHost.pdb
