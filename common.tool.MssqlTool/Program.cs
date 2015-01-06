@@ -15,16 +15,10 @@ namespace common.tool.MssqlTool
         [STAThread]
         static void Main()
         {
+            Console.ReadLine();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-        }
-
-        public bool GetConnection()
-        {
-            bool flag = false;
-            //SELECT COLUMN_NAME,DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'AdminInfo';
-            return flag;
         }
     }
 }
